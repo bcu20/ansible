@@ -1,0 +1,14 @@
+---
+- hosts: all
+  connection: local
+ #gather_facts: false
+  tasks:
+    - name: Get IOS Facts
+      ios_facts:
+        gather_subset:
+        - min
+        - config
+    - name: create interface
+      ios_l3_interface:
+        name: Loopback 1
+        ipv4: 1.1.1.1/32 
