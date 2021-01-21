@@ -9,8 +9,8 @@
     - name: create prefix
       netbox_prefix:
         netbox_url: http://192.168.28.130/
-        netbox_token:
+        netbox_token: edfe7638d4b639632d54900bac5c74a035f344a8
         #validate_certs: False
         data:
           prefix: 1.1.1.0/24
-         state: present
+        state: present
